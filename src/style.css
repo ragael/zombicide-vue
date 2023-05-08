@@ -1,0 +1,37 @@
+* {
+  position: relative;
+  box-sizing: border-box;
+}
+body {
+  background-color: darkgray;
+}
+.menu {
+  position: fixed;
+  left: 50%;
+  bottom: 5px;
+  border: 3px white solid;
+  box-shadow: inset 0 0 3px 2px rgba(0, 0, 0, 0.5), 2px 2px 3px 2px rgba(0, 0, 0, 0.5);;
+  /* box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.5); */
+  transition: opacity 1s;
+  display: flex;
+  padding: 3px;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  gap: 5px;
+  transform: translate(-50%, 0);
+  background-color: lightgray;
+  /* border-radius: 1rem; */
+  opacity: 0;
+}
+.on {
+  opacity: 1 !important;
+}
+.menu img {
+  max-height: 64px;
+  cursor: pointer;
+  transition: scale 0.5s;
+}
+.menu img:hover {
+  scale: 1.1;
+}
